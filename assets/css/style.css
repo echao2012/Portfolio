@@ -1,3 +1,20 @@
+body {
+  background-color: #2e3141;
+  background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url(../images/austin-background.jpg);
+  background-size: auto, cover;
+  background-attachment: fixed, fixed;
+  background-position: center, center;
+}
+
+.btn-outline-white {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.btn-outline-white:hover {
+  background-color: rgb(200, 200, 200, 0.2) !important;
+}
+
 .container {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -5,6 +22,7 @@
 
 .header-div {
   display: inline-block;
+  color: white;
 }
 
 .header-div h3 {
@@ -21,13 +39,14 @@
 }
 
 #title-section {
-  background: url(../images/austin-background.jpg) no-repeat center;
+  /* background: url(../images/austin-background.jpg) no-repeat center;
   background-size: cover;
   background-blend-mode: multiply;
-  background-color: rgba(100, 100, 100, 0.7);
+  background-attachment: fixed; */
+  /* background-color: rgba(100, 100, 100, 0.7); */
   color: white;
-  height: 30rem;
-  padding: 10rem 1rem 10rem 1rem;
+  height: 35rem;
+  padding: 15rem 1rem 15rem 1rem;
   text-align: center;
 }
 
@@ -41,6 +60,11 @@
   font-weight: 400;
 }
 
+#about-section {
+  background-color: rgb(51, 55, 77);
+  color: white;
+}
+
 #profile-img-col {
   max-width: 18rem;
   margin: 0 auto;
@@ -48,22 +72,35 @@
 
 #projects-section {
   text-align: center;
-  background-color: grey;
-}
-
-#projects-section .header-div {
-  color: white;
+  background-color: rgb(36, 41, 68);
 }
 
 #projects-section .card {
-  width: 20rem;
+  width: 21rem;
   margin: 1rem;
+  background-color: rgb(51, 55, 77);
+  color: white;
+}
+
+#projects-section .card-text {
+  color: rgb(190, 190, 190);
 }
 
 #skills-section {
-  
+  background-color: rgb(51, 55, 77);
+  color: white;
+}
+
+#skills-section .skill-icon {
+  text-align: center;
+  margin: 2rem;
+  max-height: 5.2rem;
+}
+
+#skills-section i {
+  font-size: 5rem;
 }
 
 #contact-section {
-
+  /* background-color: rgb(36, 41, 68); */
 }
