@@ -29,7 +29,7 @@ body {
   font-size: 2.5rem;
 }
 
-.header-div hr {
+hr {
   border: none;
   height: 1px;
   color: rgb(200, 200, 200);
@@ -41,7 +41,9 @@ body {
 #title-section {
   color: white;
   height: 35rem;
-  padding: 15rem 1rem 15rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -53,6 +55,15 @@ body {
 #title-section h2 {
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+#title-section hr {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+#title-header {
+  display: inline-block;
 }
 
 #about-section {
@@ -107,6 +118,8 @@ body {
 #contact-section a {
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.7);
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
 }
 
 #contact-section i {
