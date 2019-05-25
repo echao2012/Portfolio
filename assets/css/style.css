@@ -1,6 +1,6 @@
 body {
   background-color: #2e3141;
-  background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url(../images/austin-background.jpg);
+  background-image: linear-gradient(to top, rgba(46, 49, 65, 0.7), rgba(46, 49, 65, 0.7)), url(../images/austin-background.jpg);
   background-size: auto, cover;
   background-attachment: fixed, fixed;
   background-position: center, center;
@@ -39,11 +39,6 @@ body {
 }
 
 #title-section {
-  /* background: url(../images/austin-background.jpg) no-repeat center;
-  background-size: cover;
-  background-blend-mode: multiply;
-  background-attachment: fixed; */
-  /* background-color: rgba(100, 100, 100, 0.7); */
   color: white;
   height: 35rem;
   padding: 15rem 1rem 15rem 1rem;
@@ -63,16 +58,17 @@ body {
 #about-section {
   background-color: rgb(51, 55, 77);
   color: white;
+  border-radius: 0;
 }
 
 #profile-img-col {
   max-width: 18rem;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 #projects-section {
   text-align: center;
-  background-color: rgb(36, 41, 68);
+  background-color: rgb(24, 27, 46);
 }
 
 #projects-section .card {
@@ -87,8 +83,10 @@ body {
 }
 
 #skills-section {
+  text-align: center;
   background-color: rgb(51, 55, 77);
   color: white;
+  border-radius: 0;
 }
 
 #skills-section .skill-icon {
@@ -101,6 +99,50 @@ body {
   font-size: 5rem;
 }
 
-#contact-section {
-  /* background-color: rgb(36, 41, 68); */
+#contact-section .contact-icon {
+  margin: 2rem 2rem 0 0;
+  max-height: 5.2rem;
+}
+
+#contact-section a {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#contact-section i {
+  text-align: center;
+  font-size: 4rem;
+  margin-right: 0.5rem;
+  min-width: 4rem;
+}
+
+#contact-section span {
+  line-height: 4rem;
+  vertical-align: top;
+}
+
+#contact-section a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+#contact-section .footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  #contact-section a {
+    font-size: 1rem;
+  }
+  
+  #contact-section i {
+    font-size: 2rem;
+    min-width: 2rem;
+  }
+  
+  #contact-section span {
+    line-height: 2rem;
+  }
 }
